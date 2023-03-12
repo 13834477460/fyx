@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 深浅拷贝
+    // 1. 浅拷贝
+    // let obj1 = { name: '张三' }
+    // let obj2 = {}
+    // Object.assign(obj2, obj1)
+
+    // console.log(obj1)
+    // console.log(obj2)
+
+
+    // 2. 浅拷贝
+    // let obj1 = { name: '张三' }
+    // let obj2 = { ...obj1 }
+
+    // 3. 深拷贝 - 使用JSON深拷贝的缺点是不能拷贝函数
+    // let obj1 = { name: '张三' }
+    // let obj2 = JSON.parse(JSON.stringify(obj1))
+
+    // 4. 自己写递归深拷贝 - 面试题
+
+    let obj = {
+      name: '张三',
+      hobby: ['抽烟', '喝酒', '烫头'],
+      action: () => {
+        console.log('能吃能喝能睡', this)
+      }
+    }
+
+    function cloneDeep (data) {
+      // 判断是不是引用数据类型,如果参数 data 是基本数据类型直接返回即可
+      function isReference(obj) {
+        return (typeof obj === 'object' || typeof obj === 'function') && obj !== null
+      }
+
+      // 判断引用数据据类型,如果不是引用数据类型直接return
+      if (!isReference(data)) {
+        return data
+      }
+      
+      function isFunc (fun) {
+        return typeof fun === 'function'
+      }
+      // 判断是不是一个函数
+      if (isFunc(data)) {
+        let fnText = data.toString()
+        let startIndex = fnText.indexOf('{')
+        let endIndex = fnText.lastIndexOf('}')
+        let fnBody = fnText.slice(startIndex + 1, endIndex)
+        return new Function(fnBody)
+      }
+
+      // 剩下数组和对象
+      let res = Array.isArray(data) ? [] : {};
+
+      for (const key in data) {
+        res[key] = cloneDeep(data[key])
+      }
+
+      return res;
+    }
+
+    
+    // function fn () { console.log('我爱你') }
+    // let result = cloneDeep(fn);
+
+
+    let result = cloneDeep(obj);
+    console.log(obj)
+    console.log(result)
+    console.log(result.hobby === obj.hobby)
+    console.log(result.action === obj.action)
+
+
+    // ------------ 创建函数
+    // function fn () { console.log('我爱你') }
+    // const fn = function () { console.log('我爱你') }
+    // const fn = () => { console.log('我爱你') }
+    
+    // new Function()
+    // 可以传一个或多个参数
+    //  当有多个参数的时候,前面的参数都是形参,之后最后一个参数是函数体
+    //  当有一个参数的时候,这个参数就是函数体
+    // const add = new Function('a', 'b', 'return a + b')
+    // console.log(add)
+    // console.log( add(3, 5) )
+
+    // const fn1 = new Function('console.log("我爱你")')
+    // console.log(fn1)
+    // console.log( fn1() )
+
+
+    // 5. 使用插件 - lodash这个插件中已经有写好的深拷贝方法,只要拿过来用即可
+  </script>
+</body>
+</html>

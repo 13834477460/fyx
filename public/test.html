@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div id="app">
+    <input type="text">
+    <div class="wrapper">
+      <div class="box" v-bind="qwet"></div>
+      <span></span>
+    </div>
+  </div>
+
+  <script>
+
+    // 指令解析 - 拓展 - 听不明白没事,后面讲源码分析的时候会重新讲
+    const appNode = document.querySelector('#app')
+    console.log(appNode.children)
+
+    let wrapperNode;
+    let box;
+
+    let arr = [...appNode.children]
+    console.log(arr)
+
+    arr.forEach(node => {
+      console.log(node.nodeName, node)
+      if (node.nodeName === 'DIV') {
+        wrapperNode = node;
+        box = node.children[0]
+        console.log('box', box)
+        console.log('box', box.attributes)
+        console.log('box', box.attributes[1])
+      }
+    })
+
+
+  </script>
+
+</body>
+</html>

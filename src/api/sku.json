@@ -1,0 +1,47 @@
+// 保存的数据
+{
+  "spuId": 3, // 从父组件传过来的spuInfo拿到
+  "tmId": 2, // 从父组件传过来的spuInfo拿到
+  "skuName": "iPhone 12 mini",
+  "price": "2500",
+  "weight": "0.2",
+  "skuDesc": "屏幕小",
+  "category3Id": 61, // 从store中拿
+  "skuDefaultImg": "http://47.93.148.192:8080/group1/M00/00/02/rBHu8l-rgfWAbqkuAAENKBtJukQ551.jpg", // 设为默认(默认图片是封面图,只有一张)
+  "createTime": "", // 没用
+  "skuImageList": [ // 选中的图片列表
+    {
+      "id": 12,
+      "spuId": 3,
+      "imgName": "7155bba4c363065f.jpg",
+      "imgUrl": "http://47.93.148.192:8080/group1/M00/00/02/rBHu8l-rgfWAVRWzAABUiOmA0ic932.jpg",
+      "isDefault": "0"
+    },
+    {
+      "id": 13,
+      "spuId": 3,
+      "imgName": "2689bc534d570eaf.jpg",
+      "imgUrl": "http://47.93.148.192:8080/group1/M00/00/02/rBHu8l-rgfWAO2oYAAEw9kY2VKk982.jpg",
+      "isDefault": "0"
+    },
+    {
+      "id": 14,
+      "spuId": 3,
+      "imgName": "6ef342197c8095b6.jpg",
+      "imgUrl": "http://47.93.148.192:8080/group1/M00/00/02/rBHu8l-rgfWAJllcAAEY0AkXL8M782.jpg",
+      "isDefault": "0"
+    }
+  ],
+  "skuAttrValueList": [ // 平台属性
+    {
+      "attrId": "106", // 平台属性id
+      "valueId": "175" // 平台属性值id
+    }
+  ],
+  "skuSaleAttrValueList": [
+    {
+      "saleAttrId": "5", // 销售属性id
+      "saleAttrValueId": "12" // 销售属性值id
+    }
+  ]
+}

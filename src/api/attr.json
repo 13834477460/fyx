@@ -1,0 +1,401 @@
+// 获取的平台属性列表
+[
+  {
+    "id": 106,
+    "attrName": "手机系统",
+    "categoryId": 2,
+    "categoryLevel": 1,
+    "attrValueList": [
+      {
+        "id": 175,
+        "valueName": "苹果手机",
+        "attrId": 106
+      },
+      {
+        "id": 176,
+        "valueName": "安卓手机",
+        "attrId": 106
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "attrName": "电池容量",
+    "categoryId": 13,
+    "categoryLevel": 2,
+    "attrValueList": [
+      {
+        "id": 177,
+        "valueName": "1200mAh以下",
+        "attrId": 107
+      },
+      {
+        "id": 179,
+        "valueName": "3000mAh以上",
+        "attrId": 107
+      },
+      {
+        "id": 178,
+        "valueName": "1200mAh到3000mAh",
+        "attrId": 107
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "attrName": "运行内存",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 83,
+        "valueName": "8G",
+        "attrId": 23
+      },
+      {
+        "id": 170,
+        "valueName": "128G",
+        "attrId": 23
+      },
+      {
+        "id": 215,
+        "valueName": "128G",
+        "attrId": 23
+      },
+      {
+        "id": 13,
+        "valueName": "3G",
+        "attrId": 23
+      },
+      {
+        "id": 120,
+        "valueName": "12G",
+        "attrId": 23
+      },
+      {
+        "id": 169,
+        "valueName": "6G",
+        "attrId": 23
+      },
+      {
+        "id": 171,
+        "valueName": "256G",
+        "attrId": 23
+      },
+      {
+        "id": 214,
+        "valueName": "6G",
+        "attrId": 23
+      },
+      {
+        "id": 216,
+        "valueName": "256G",
+        "attrId": 23
+      },
+      {
+        "id": 14,
+        "valueName": "4G",
+        "attrId": 23
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "attrName": "机身内存",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 81,
+        "valueName": "64G",
+        "attrId": 24
+      },
+      {
+        "id": 166,
+        "valueName": "256G",
+        "attrId": 24
+      },
+      {
+        "id": 168,
+        "valueName": "1T",
+        "attrId": 24
+      },
+      {
+        "id": 80,
+        "valueName": "32G",
+        "attrId": 24
+      },
+      {
+        "id": 82,
+        "valueName": "128G",
+        "attrId": 24
+      },
+      {
+        "id": 167,
+        "valueName": "512G",
+        "attrId": 24
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "attrName": "CPU型号",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 180,
+        "valueName": "骁龙439",
+        "attrId": 111
+      },
+      {
+        "id": 182,
+        "valueName": "骁龙845",
+        "attrId": 111
+      },
+      {
+        "id": 184,
+        "valueName": "5G骁龙768G",
+        "attrId": 111
+      },
+      {
+        "id": 181,
+        "valueName": "骁龙730G",
+        "attrId": 111
+      },
+      {
+        "id": 183,
+        "valueName": "麒麟990",
+        "attrId": 111
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "attrName": "屏幕尺寸",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 186,
+        "valueName": "6.0-6.24英寸",
+        "attrId": 112
+      },
+      {
+        "id": 188,
+        "valueName": " 6.75-6.84英寸",
+        "attrId": 112
+      },
+      {
+        "id": 190,
+        "valueName": "6.55-6.64英寸",
+        "attrId": 112
+      },
+      {
+        "id": 185,
+        "valueName": "6.95英寸及以上",
+        "attrId": 112
+      },
+      {
+        "id": 187,
+        "valueName": "6.85-6.94英寸",
+        "attrId": 112
+      },
+      {
+        "id": 189,
+        "valueName": "6.65-6.74英寸",
+        "attrId": 112
+      }
+    ]
+  },
+  {
+    "id": 6052,
+    "attrName": "手机材质",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 18104,
+        "valueName": "田震牌钛合金",
+        "attrId": 6052
+      },
+      {
+        "id": 18106,
+        "valueName": "铝合金",
+        "attrId": 6052
+      },
+      {
+        "id": 18105,
+        "valueName": "金属222",
+        "attrId": 6052
+      }
+    ]
+  },
+  {
+    "id": 6247,
+    "attrName": "运营商",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 16543,
+        "valueName": "电信",
+        "attrId": 6247
+      },
+      {
+        "id": 16540,
+        "valueName": "全网通",
+        "attrId": 6247
+      },
+      {
+        "id": 16542,
+        "valueName": "移动",
+        "attrId": 6247
+      },
+      {
+        "id": 16541,
+        "valueName": "联通",
+        "attrId": 6247
+      }
+    ]
+  },
+  {
+    "id": 6370,
+    "attrName": "刷新率",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 18012,
+        "valueName": "90HZ",
+        "attrId": 6370
+      }
+    ]
+  },
+  {
+    "id": 6462,
+    "attrName": "测试",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 17998,
+        "valueName": "55555",
+        "attrId": 6462
+      }
+    ]
+  },
+  {
+    "id": 6465,
+    "attrName": "颜色",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 17013,
+        "valueName": "蓝色",
+        "attrId": 6465
+      },
+      {
+        "id": 17012,
+        "valueName": "白色",
+        "attrId": 6465
+      }
+    ]
+  },
+  {
+    "id": 6540,
+    "attrName": "颜色",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 18156,
+        "valueName": "红色",
+        "attrId": 6540
+      },
+      {
+        "id": 18155,
+        "valueName": "黑色",
+        "attrId": 6540
+      }
+    ]
+  },
+  {
+    "id": 6634,
+    "attrName": "CPU型号",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 18150,
+        "valueName": "麒麟990",
+        "attrId": 6634
+      },
+      {
+        "id": 18147,
+        "valueName": "骁龙845",
+        "attrId": 6634
+      },
+      {
+        "id": 18149,
+        "valueName": "骁龙430",
+        "attrId": 6634
+      },
+      {
+        "id": 18146,
+        "valueName": "5G骁龙768G",
+        "attrId": 6634
+      },
+      {
+        "id": 18148,
+        "valueName": "骁龙8Gen 1",
+        "attrId": 6634
+      }
+    ]
+  },
+  {
+    "id": 6764,
+    "attrName": "666",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 17646,
+        "valueName": "6666",
+        "attrId": 6764
+      }
+    ]
+  },
+  {
+    "id": 6807,
+    "attrName": "像素",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 17777,
+        "valueName": "2500",
+        "attrId": 6807
+      },
+      {
+        "id": 17778,
+        "valueName": "3500",
+        "attrId": 6807
+      }
+    ]
+  },
+  {
+    "id": 6920,
+    "attrName": "5,167.895",
+    "categoryId": 61,
+    "categoryLevel": 3,
+    "attrValueList": [
+      {
+        "id": 18181,
+        "valueName": "5,167.895",
+        "attrId": 6920
+      }
+    ]
+  }
+]
